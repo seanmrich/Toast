@@ -11,10 +11,11 @@
 		14CD7F152B39DD83001A5F2D /* Root.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7F142B39DD83001A5F2D /* Root.swift */; };
 		14CD7F172B39DD84001A5F2D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CD7F162B39DD84001A5F2D /* Assets.xcassets */; };
 		14CD7F1A2B39DD84001A5F2D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14CD7F192B39DD84001A5F2D /* Preview Assets.xcassets */; };
-		14CD7F212B39DD95001A5F2D /* Toast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7F202B39DD95001A5F2D /* Toast.swift */; };
+		14CD7F212B39DD95001A5F2D /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7F202B39DD95001A5F2D /* ToastView.swift */; };
 		14CD7F242B39DDBC001A5F2D /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 14CD7F232B39DDBC001A5F2D /* ComposableArchitecture */; };
 		14CD7F272B3B3ED9001A5F2D /* AsyncAlgorithms in Frameworks */ = {isa = PBXBuildFile; productRef = 14CD7F262B3B3ED9001A5F2D /* AsyncAlgorithms */; };
 		14CD7F292B3BCD1E001A5F2D /* ToastClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7F282B3BCD1E001A5F2D /* ToastClient.swift */; };
+		14CD7F512B3C4A9B001A5F2D /* ToastState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14CD7F502B3C4A9B001A5F2D /* ToastState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,8 +24,9 @@
 		14CD7F142B39DD83001A5F2D /* Root.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Root.swift; sourceTree = "<group>"; };
 		14CD7F162B39DD84001A5F2D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14CD7F192B39DD84001A5F2D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		14CD7F202B39DD95001A5F2D /* Toast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Toast.swift; sourceTree = "<group>"; };
+		14CD7F202B39DD95001A5F2D /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		14CD7F282B3BCD1E001A5F2D /* ToastClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastClient.swift; sourceTree = "<group>"; };
+		14CD7F502B3C4A9B001A5F2D /* ToastState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +63,8 @@
 			children = (
 				14CD7F122B39DD83001A5F2D /* ToastApp.swift */,
 				14CD7F142B39DD83001A5F2D /* Root.swift */,
-				14CD7F202B39DD95001A5F2D /* Toast.swift */,
+				14CD7F502B3C4A9B001A5F2D /* ToastState.swift */,
+				14CD7F202B39DD95001A5F2D /* ToastView.swift */,
 				14CD7F282B3BCD1E001A5F2D /* ToastClient.swift */,
 				14CD7F162B39DD84001A5F2D /* Assets.xcassets */,
 				14CD7F182B39DD84001A5F2D /* Preview Content */,
@@ -155,8 +158,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				14CD7F512B3C4A9B001A5F2D /* ToastState.swift in Sources */,
 				14CD7F152B39DD83001A5F2D /* Root.swift in Sources */,
-				14CD7F212B39DD95001A5F2D /* Toast.swift in Sources */,
+				14CD7F212B39DD95001A5F2D /* ToastView.swift in Sources */,
 				14CD7F292B3BCD1E001A5F2D /* ToastClient.swift in Sources */,
 				14CD7F132B39DD83001A5F2D /* ToastApp.swift in Sources */,
 			);

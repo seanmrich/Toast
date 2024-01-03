@@ -4,8 +4,8 @@ import Dependencies
 
 @DependencyClient
 struct ToastClient: Sendable {
-  var observe: @Sendable () -> AsyncStream<String> = { AsyncStream([String]().async) }
-  var present: @Sendable (_ title: String) async -> Void
+  var observe: @Sendable () -> AsyncStream<ToastState> = { AsyncStream([ToastState]().async) }
+  var present: @Sendable (_ toast: ToastState) async -> Void
 }
 
 extension ToastClient: TestDependencyKey {
@@ -14,7 +14,7 @@ extension ToastClient: TestDependencyKey {
 
 extension ToastClient: DependencyKey {
   static let liveValue = {
-    let (stream, continuation) = AsyncStream.makeStream(of: String.self)
+    let (stream, continuation) = AsyncStream.makeStream(of: ToastState.self)
     return ToastClient(
       observe: { stream },
       present: { continuation.yield($0) }
